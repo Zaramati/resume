@@ -14,13 +14,16 @@ body {
   background-position: 50% 50%;
   background-position-y: 70pc
 }
+<style>
+div.a {
+        text-align: center;
+}
 </style>
 </head>
 <body>
-
 <!-- HTML -->
-<h1>Hello</h1>
-<h3>I'm Hila and this is my portfolio
+<h1>Hila Zaramati</h1>
+<h3>Hey, I'm Hila and this is my portfolio
 </h3>
 <br>
     <p>Aducation </p>
@@ -41,6 +44,33 @@ body {
     <li>Tow star + nitrox diver license</li>
     <li>privet car + up tp 500hp motorcycle license</li></ul>
 </p>
-</body>
+<!-- The grid: four columns -->
+<div class="row">
+        <div class="column">
+          <img src="img1.jpg" alt="Nature" onclick="openImg(this);">
+        </div>
+        <div class="column">
+          <img src="img2.jpg" alt="Snow" onclick="openImg(this);">
+        </div>
+        <div class="column">
+          <img src="img3.jpg" alt="Mountains" onclick="openImg(this);">
+        </div>
+        <div class="column">
+          <img src="img4.jpg" alt="Lights" onclick="openImg(this);">
+        </div>
+      </div>
 
+      <!-- The expanding image container -->
+      <div class="container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      
+        <!-- Expanded image -->
+        <img id="expandedImg" style="width:100%">
+      
+        <!-- Image text -->
+        <div id="imgtext"></div>
+      </div>
+       <script type="text/javascript" src="write.js"></script>
+</body>
 </html>
